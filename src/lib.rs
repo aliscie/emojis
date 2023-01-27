@@ -109,7 +109,7 @@ pub use crate::gen::Group;
 #[derive(Debug)]
 pub struct Emoji {
     emoji: &'static str,
-    name: &'static str,
+    pub name: &'static str,
     unicode_version: UnicodeVersion,
     group: Group,
     skin_tone: Option<(u16, SkinTone)>,

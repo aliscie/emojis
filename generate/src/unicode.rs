@@ -37,7 +37,7 @@ pub enum SkinTone {
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct Emoji {
     emoji: String,
-    name: String,
+    pub name: String,
     unicode_version: UnicodeVersion,
     status: Status,
     skin_tones: Vec<SkinTone>,
